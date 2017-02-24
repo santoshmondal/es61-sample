@@ -6,4 +6,4 @@ let middleName = "Systems";
 let lastName = " Pvt Ltd";
 
 
-console.log(firstName + " :: " + middleName);
+console.log(firstName + " ::: " + middleName);
