@@ -11,12 +11,16 @@ console.log(firstName + " ::::: " + middleName + " :: " + lastName);
 
 
 class Hello{
-    var test;
+    constructor(height , width){
+        this.height = height;
+        this.widht = width;
+    }
 
-
+    area() {
+        return this.height * this.widht;
+    }
 }
 
-class Person {
 
-}
-
+let refobj = new Hello(23, 44);
+console.log( "AREA :: " + refobj.area());
