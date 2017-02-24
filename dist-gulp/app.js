@@ -14,3 +14,7 @@ console.log(firstName + " ::::: " + middleName + " :: " + lastName);
 var Hello = function Hello() {
   _classCallCheck(this, Hello);
 };
+
+var Person = function Person() {
+  _classCallCheck(this, Person);
+};
