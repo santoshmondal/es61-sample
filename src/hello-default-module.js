@@ -3,9 +3,11 @@
  */
 import  dref from './com/affixus/first-default';
 import {jsonObject} from './com/affixus/first-default';
+import * as firstDefault from './com/affixus/first-default';
 
 
 console.log(dref);
 console.log(jsonObject);
 console.log(jsonObject);
+console.log(firstDefault);
 

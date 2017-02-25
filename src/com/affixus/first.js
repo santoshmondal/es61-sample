@@ -17,3 +17,11 @@ export function demo2(){
 export function demo3(){
     console.log("Hello Demo3!!!");
 };
+
+
+export function demo4() {
+    let fname = "Hello";
+    let lname = "World";
+
+    console.log(fname);
+}
