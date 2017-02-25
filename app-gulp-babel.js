@@ -4,14 +4,15 @@
 var gulp = require('gulp');
 var pump = require('pump');
 var babel = require('gulp-babel');
+var sourcemaps = require('gulp-sourcemaps');
+
 
 
 gulp.task('gulp-babel', function(){
     gulp.src('src/**/*.js')
         .pipe(babel({
             presets: ['es2015'],
-            "sourceMaps": "both",
-            devtool: "source-map"
+            "sourceMaps": "both"
         }))
         .pipe(gulp.dest('dist-gulp'));
 });
@@ -20,9 +21,11 @@ gulp.task('gulp-babel', function(){
 // task handle exception
 gulp.task('gulp-babel-he', function(cb){
    pump([gulp.src('src/**/*.js'),
+       sourcemaps.init(),
        babel({
            presets: ['es2015']
        }),
+       sourcemaps.write(),
        gulp.dest('dist-gulp')
        ], cb);
 });
