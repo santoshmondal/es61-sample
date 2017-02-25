@@ -33,3 +33,8 @@ var Hello = function () {
 
 var refobj = new Hello(23, 44);
 console.log("AREA :: " + refobj.area());
+
+var temp = "Hello template\nadfadfadsf afadsfasdfasd fadsfasdfdsafasfadsf\nafadfadfdfaf\nafdfadsfdafadfasf afafd " + firstName + "  afdaff afaf " + refobj.area();
+
+console.log(temp);
+console.log(temp);

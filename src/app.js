@@ -24,3 +24,12 @@ class Hello{
 
 let refobj = new Hello(23, 44);
 console.log( "AREA :: " + refobj.area());
+
+let temp = `Hello template
+adfadfadsf afadsfasdfasd fadsfasdfdsafasfadsf
+afadfadfdfaf
+afdfadsfdafadfasf afafd ${firstName}  afdaff afaf ${refobj.area()}`;
+
+
+console.log(temp);
+console.log(temp);
