@@ -9,7 +9,9 @@ var babel = require('gulp-babel');
 gulp.task('gulp-babel', function(){
     gulp.src('src/**/*.js')
         .pipe(babel({
-            presets: ['es2015']
+            presets: ['es2015'],
+            "sourceMaps": "both",
+            devtool: "source-map"
         }))
         .pipe(gulp.dest('dist-gulp'));
 });

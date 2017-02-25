@@ -7,4 +7,5 @@ import {jsonObject} from './com/affixus/first-default';
 
 console.log(dref);
 console.log(jsonObject);
+console.log(jsonObject);
 

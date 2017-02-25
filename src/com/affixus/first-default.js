@@ -5,7 +5,7 @@ let firstName = "Affixus";
 let middleName = "Systems";
 let lastName = "Pvt Ltd";
 
-export let jsonObject = {
+let jsonObject = {
     "prop1" : "Value1",
     "prop2" : "Value2"
 };
